@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCW - Framework</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- framework -->
+    <link rel="stylesheet" href="../framework/style.css">
+    <!-- js - header -->
+    <script src="assets/js/header.js" defer></script>
+    <!-- css - highlight -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#colors" class="link-js" data-content-toshow="content-colors">Colors</a></li>
+                    <li><a href="#header" class="link-js" data-content-toshow="content-header">Headers</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        <div style="opacity: 1;" class="content-item" id="content-colors">
+            <h1 class="content-item-title"><span class="sep-hashtag">#</span>Colors</h1>
+            <h2 class="content-item-desc">In NoCodeWeb framework we have integrated some default variables colors. Down, you have a little demo of all variables colors.</h2>
+            <ul class="color-demo">
+                <li class="ncw-bg-color-white">color-white</li>
+                <li class="ncw-bg-color-black ncw-color-white">color-black</li>
+                <li class="ncw-bg-color-light">color-light</li>
+                <li class="ncw-bg-color-dark ncw-color-white">color-dark</li>
+                <li class="inline-block ncw-bg-color-red">color-red</li>
+                <li class="inline-block ncw-bg-color-red-light">color-red-light</li>
+                <li class="inline-block ncw-bg-color-red-dark">color-red-dark</li>
+                <li class="inline-block ncw-bg-color-red-transparency">color-red-transparency</li>
+                <li class="reset"></li>
+                <li class="inline-block ncw-bg-color-green">color-green</li>
+                <li class="inline-block ncw-bg-color-green-light">color-green-light</li>
+                <li class="inline-block ncw-bg-color-green-dark">color-green-dark</li>
+                <li class="inline-block ncw-bg-color-green-transparency">color-green-transparency</li>
+                <li class="reset"></li>
+                <li class="inline-block ncw-bg-color-blue">color-blue</li>
+                <li class="inline-block ncw-bg-color-blue-light">color-blue-light</li>
+                <li class="inline-block ncw-bg-color-blue-dark">color-blue-dark</li>
+                <li class="inline-block ncw-bg-color-blue-transparency">color-blue-transparency</li>
+                <li class="reset"></li>
+                <li class="inline-block ncw-bg-color-orange">color-orange</li>
+                <li class="inline-block ncw-bg-color-orange-light">color-orange-light</li>
+                <li class="inline-block ncw-bg-color-orange-dark">color-orange-dark</li>
+                <li class="inline-block ncw-bg-color-orange-transparency">color-orange-transparency</li>
+                <li class="reset"></li>
+                <li class="inline-block ncw-bg-color-yellow">color-yellow</li>
+                <li class="inline-block ncw-bg-color-yellow-light">color-yellow-light</li>
+                <li class="inline-block ncw-bg-color-yellow-dark">color-yellow-dark</li>
+                <li class="inline-block ncw-bg-color-yellow-transparency">color-yellow-transparency</li>
+                <li class="reset"></li>
+                <li class="inline-block ncw-bg-color-brown">color-brown</li>
+                <li class="inline-block ncw-bg-color-brown-light">color-brown-light</li>
+                <li class="inline-block ncw-bg-color-brown-dark">color-brown-dark</li>
+                <li class="inline-block ncw-bg-color-brown-transparency">color-brown-transparency</li>
+                <li class="reset"></li>
+                <li class="inline-block ncw-bg-color-grey ncw-color-white">color-grey</li>
+                <li class="inline-block ncw-bg-color-grey-light ncw-color-white">color-grey-light</li>
+                <li class="inline-block ncw-bg-color-grey-dark ncw-color-white">color-grey-dark</li>
+                <li class="inline-block ncw-bg-color-grey-transparency ncw-color-white">color-grey-transparency</li>
+            </ul>
+            <h1 class="content-item-title"><span class="sep-hashtag">#</span>Background colors</h1>
+            <h2 class="content-item-desc">For adding the background-color to an element you can simply add a class on the element. The name of the class must beggin with "<span class="ncw-color-blue">ncw-bg-</span>" and after you add color from the color section.</h2>
+            <h2 class="content-item-desc">Examples</h2>
+            <h1 class="ncw-bg-color-blue-light">Text</h1>
+            <pre><code class="language-html">&lt;h1 class="ncw-bg-color-blue-light"&gt;Text&lt;/h1&gt;</code></pre>
+            <div class="ncw-bg-color-orange ncw-pos-w-25 ncw-pos-h-50"></div>
+            <pre><code class="language-html">&lt;div class="ncw-bg-color-orange ncw-pos-w-25 ncw-pos-h-50"&gt;&lt;/div&gt;</code></pre>
+        </div>
+        <div class="content-item" id="content-header">
+            <h1 class="content-item-title">Headers</h1>
+        </div>
+    </div>
+</body>
+<!-- js - highlight.js -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>
