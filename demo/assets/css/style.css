@@ -32,7 +32,7 @@
     --font-text: 'Roboto', sans-serif;
 
     /* White theme */
-    --color-first-wt: #000;
+    --color-first-wt: rgb(0,0,0);
     --color-second-wt: #FFF;
     --color-third-wt: #27566B;
 
@@ -74,9 +74,16 @@
 }
 
 .header ul li a {
-    color: var(--color-second-wt);
+    color: rgb(211, 211, 211);
 
     font-family: var(--font-text);
+
+    transition: .33s;
+}
+
+.header ul li a.active {
+    color: #FFF;
+    font-weight: 500;
 }
 
 /* Content */
@@ -89,11 +96,12 @@
 }
 
 .content-item {
-    margin: 100px;
+    padding: 100px;
 
     position: absolute;
 
     opacity: 0;
+    display: none;
     transition: .33s;
     width: calc(100% - 200px);
 }
@@ -107,7 +115,7 @@
 
     width: 100%;
 
-    padding: 0 0 15px 0;
+    padding: 50px 0 15px 0;
     
     margin: 0 0 15px 0;
 
@@ -117,36 +125,68 @@
     font-weight: 500;
 }
 
+.content-item .content-item-title:nth-child(1) {
+    padding-top: 0;
+}
+
 .content-item .content-item-desc {
     font-family: var(--font-text);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
+    color: rgb(63, 63, 63);
 }
 
 .content-item ul.color-demo {
-    margin-bottom: 30px;
     font-family: var(--font-text);
 }
 
 .content-item ul.color-demo li {
+    position: relative;
+
     width: 200px;
     height: 50px;
     text-align: center;
     line-height: 50px;
     margin: 10px;
+
 }
 
-.content-item ul.color-demo li.reset {
+.content-item ul.color-demo li.color-demo-transparency {
+    color: var(--color-second-wt);
+}
+
+.content-item ul.color-demo li.color-demo-transparency::after {
+    content: ' ';
+    background-color: var(--color-first-wt);
+    width: calc(50% + 4px);
+    position: absolute;
+    height: 58px;
+    top: -4px;
+    right: -4px;
+}
+
+.content-item .color-demo li::after {
+    z-index: -1;
+}
+
+.content-item ul.color-demo li.reset, .content-item ul.color-demo li.reset::after {
     width: 0;
     height: 0;
     margin: 0;
 }
 
-.content-item pre {
+.content-item pre, .content-item div, .content-item h1, .content-item h2, .content-item p {
     margin-bottom: 30px;
 }
 
-.content-item div {
-    margin-bottom: 30px;
+.content-item-example {
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: -1;
+}
+
+.content-item-example p, .content-item-example h1, .content-item-example h2, .content-item-example div, .content-item-example ul {
+    margin-bottom: 0;
 }
