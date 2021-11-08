@@ -35,8 +35,8 @@
                     <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Columns</a></li>
                     <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Margin</a></li>
                     <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Padding</a></li>
-                    <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Transition</a></li>
-                    <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Cursor</a></li>
+                    <li><a href="#transition" class="link-js" data-content-toshow="content-transition">Transition</a></li>
+                    <li><a href="#cursor" class="link-js" data-content-toshow="content-cursor">Cursor</a></li>
                     <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Links</a></li>
                     <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Headers</a></li>
                     <li><a href="#underwork" class="link-js" data-content-toshow="content-underwork">Slider</a></li>
@@ -468,16 +468,99 @@
         </div>
         <div class="content-item" id="content-position">
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position static</h1>
+            <h2 class="content-item-desc">The element is positioned according to the normal flow of the document. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-static</span>".</h2>
+            <h2 class="content-item-desc">Example</h2>
+            <div class="content-item-example ncw-bg-color-light">
+                <div class="ncw-pos-static ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+                <div class="ncw-pos-static ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue"></div>
+            </div>
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position relative</h1>
+            <h2 class="content-item-desc">The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-relative</span>".</h2>
+            <h2 class="content-item-desc">Example</h2>
+            <div class="content-item-example ncw-bg-color-light">
+                <div class="ncw-pos-relative ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+                <div class="ncw-pos-relative ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue"></div>
+            </div>
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position absolute</h1>
+            <h2 class="content-item-desc">The element is removed from the normal document flow, and no space is created for the element in the page layout. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-absolute</span>".</h2>
+            <h2 class="content-item-desc">Example</h2>
+            <div class="content-item-example ncw-bg-color-light ncw-size-h-50">
+                <div class="ncw-pos-absolute ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+                <div class="ncw-pos-absolute ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue"></div>
+            </div>
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position fixed</h1>
+            <h2 class="content-item-desc">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-fixed</span>".</h2>
+            <h2 class="content-item-desc">Example</h2>
+            <div class="content-item-example ncw-bg-color-light">
+                <div class="ncw-pos-fixed ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores repellat nisi amet aspernatur voluptatem voluptates deserunt, ullam beatae fugiat omnis, et expedita. Eius tempore tenetur, ex minima suscipit esse!</p>
+            </div>
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position sticky</h1>
+            <h2 class="content-item-desc">The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-sticky</span>".</h2>
+            <h2 class="content-item-desc">Example</h2>
+            <div class="content-item-example ncw-bg-color-light ncw-size-h-100 ncw-pos-static" style="overflow: scroll;">
+                <div>
+                    <br/>
+                    <div class="ncw-pos-sticky ncw-size-w-100pr ncw-size-h-25 ncw-bg-color-grey ncw-color-white" style="top: -1px">A</div>
+                    <br/>
+                    <p class="ncw-font-f-roboto">Andrew</p>
+                    <p class="ncw-font-f-roboto">Alex</p>
+                    <p class="ncw-font-f-roboto">Adrian</p>
+                </div>
+                <div>
+                    <br/>
+                    <div class="ncw-pos-sticky ncw-size-w-100pr ncw-size-h-25 ncw-bg-color-grey ncw-color-white" style="top: -1px;">B</div>
+                    <br/>
+                    <p class="ncw-font-f-roboto">Ben</p>
+                    <p class="ncw-font-f-roboto">Blake</p>
+                    <p class="ncw-font-f-roboto">Beatrice</p>
+                </div>
+                <br/>
+                <p class="ncw-font-f-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consectetur voluptates velit error iste odit cumque cupiditate neque necessitatibus delectus? Minus, quas? Assumenda tenetur officiis minima ducimus? Omnis, alias inventore?</p>
+                <br/>
+                <p class="ncw-font-f-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium adipisci rem minima, nemo, ullam sapiente voluptatibus sequi nisi assumenda voluptates. Quam quas non similique beatae eum expedita excepturi libero.</p>
+                <br/>
+                <p class="ncw-font-f-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolore quae, tempore ratione, facilis error nisi beatae saepe fugiat ex asperiores mollitia similique aliquam qui. Non tempora incidunt voluptatum esse.</p>
+                <br/>
+            </div>
         </div>
         <div class="content-item" id="content-size">
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Width</h1>
+            <h2 class="content-item-desc">You can set up the width of an element with class "<span class="ncw-color-blue">ncw-size-w-</span>" and the value.<br/>Value available : <i>10, 20, 25, 50, 100, 150, 200, 250, 300, 400, 500, 600, 700, 800, 900, 1000.</i></h2>
+            <h2 class="content-item-desc">Example</h2>
+            <div class="content-item-example ncw-bg-color-light">
+                <div class="ncw-size-w-10 ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-20 ncw-size-h-25 ncw-bg-color-blue"></div>
+                <div class="ncw-size-w-25 ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-50 ncw-size-h-25 ncw-bg-color-blue"></div>
+            </div>
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Width (percentage)</h1>
+            <h2 class="content-item-desc">You can set up the with (with %) of an element with class "<span class="ncw-color-blue">ncw-size-w-</span>", the value & "<span class="ncw-color-blue">pr</span>" at the end. <br/>Value available : <i>10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100.</i></h2>
+            <h2 class="content-item-desc">Example</h2>
+            <div class="content-item-example ncw-bg-color-light">
+                <div class="ncw-size-w-10pr ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-20pr ncw-size-h-25 ncw-bg-color-blue"></div>
+                <div class="ncw-size-w-25pr ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-30pr ncw-size-h-25 ncw-bg-color-blue"></div>
+                <div class="ncw-size-w-40pr ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-50pr ncw-size-h-25 ncw-bg-color-blue"></div>
+                <div class="ncw-size-w-60pr ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-70pr ncw-size-h-25 ncw-bg-color-blue"></div>
+                <div class="ncw-size-w-75pr ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-80pr ncw-size-h-25 ncw-bg-color-blue"></div>
+                <div class="ncw-size-w-90pr ncw-size-h-25 ncw-bg-color-orange"></div>
+                <div class="ncw-size-w-100pr ncw-size-h-25 ncw-bg-color-blue"></div>
+            </div>
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Height</h1>
             <h1 class="content-item-title"><span class="sep-hashtag">#</span>Height (percentage)</h1>
+        </div>
+        <div class="content-item" id="content-transition">
+            <h1 class="content-item-title"><span class="sep-hashtag">#</span>Transition duration</h1>
+            <h1 class="content-item-title"><span class="sep-hashtag">#</span>Transition delay</h1>
+            <h1 class="content-item-title"><span class="sep-hashtag">#</span>Transition timing function</h1>
+        </div>
+        <div class="content-item" id="content-cursor">
+            <h1 class="content-item-title"><span class="sep-hashtag">#</span>Cursor type</h1>
         </div>
         <div class="content-item" id="content-underwork">
             <h1 class="content-item-title"><span class="sep-hashtag">#</span><span class="ncw-color-red">Under Work!</span></h1>
