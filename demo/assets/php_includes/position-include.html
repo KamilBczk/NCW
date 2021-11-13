@@ -1,0 +1,70 @@
+<div class="content-item" id="content-position">
+    <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position static</h1>
+    <h2 class="content-item-desc">The element is positioned according to the normal flow of the document. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-static</span>".</h2>
+    <h2 class="content-item-desc">Example</h2>
+    <div class="content-item-example ncw-bg-color-light">
+        <div class="ncw-pos-static ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+        <div class="ncw-pos-static ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue"></div>
+    </div>
+    <pre>
+        <code class="language-html">&lt;div class=&quot;ncw-pos-static ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange&quot;&gt;&lt;/div&gt;&#0010;&lt;div class=&quot;ncw-pos-static ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue&quot;&gt;&lt;/div&gt;</code>
+    </pre>
+    <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position relative</h1>
+    <h2 class="content-item-desc">The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-relative</span>".</h2>
+    <h2 class="content-item-desc">Example</h2>
+    <div class="content-item-example ncw-bg-color-light">
+        <div class="ncw-pos-relative ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+        <div class="ncw-pos-relative ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue"></div>
+    </div>
+    <pre>
+        <code class="language-html">&lt;div class=&quot;ncw-pos-relative ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange&quot;&gt;&lt;/div&gt;&#0010;&lt;div class=&quot;ncw-pos-relative ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue&quot;&gt;&lt;/div&gt;</code>
+    </pre>
+    <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position absolute</h1>
+    <h2 class="content-item-desc">The element is removed from the normal document flow, and no space is created for the element in the page layout. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-absolute</span>".</h2>
+    <h2 class="content-item-desc">Example</h2>
+    <div class="content-item-example ncw-bg-color-light ncw-size-h-50">
+        <div class="ncw-pos-absolute ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+        <div class="ncw-pos-absolute ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue"></div>
+    </div>
+    <pre>
+        <code class="language-html">&lt;div class=&quot;ncw-pos-absolute ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange&quot;&gt;&lt;/div&gt;&#0010;&lt;div class=&quot;ncw-pos-absolute ncw-size-w-50 ncw-size-h-50 ncw-bg-color-blue&quot;&gt;&lt;/div&gt;</code>
+    </pre>
+    <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position fixed</h1>
+    <h2 class="content-item-desc">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-fixed</span>".</h2>
+    <h2 class="content-item-desc">Example</h2>
+    <div class="content-item-example ncw-bg-color-light">
+        <div class="ncw-pos-fixed ncw-size-w-50 ncw-size-h-50 ncw-bg-color-orange"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores repellat nisi amet aspernatur voluptatem voluptates deserunt, ullam beatae fugiat omnis, et expedita. Eius tempore tenetur, ex minima suscipit esse!</p>
+    </div>
+    <h1 class="content-item-title"><span class="sep-hashtag">#</span>Position sticky</h1>
+    <h2 class="content-item-desc">The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. To set this position you can add class "<span class="ncw-color-blue">ncw-pos-sticky</span>".</h2>
+    <h2 class="content-item-desc">Example</h2>
+    <div class="content-item-example ncw-bg-color-light ncw-size-h-100 ncw-pos-static" style="overflow: scroll;">
+        <div>
+            <br/>
+            <div class="ncw-pos-sticky ncw-size-w-100pr ncw-size-h-25 ncw-bg-color-grey ncw-color-white" style="top: -1px">A</div>
+            <br/>
+            <p class="ncw-font-f-roboto">Andrew</p>
+            <p class="ncw-font-f-roboto">Alex</p>
+            <p class="ncw-font-f-roboto">Adrian</p>
+        </div>
+        <div>
+            <br/>
+            <div class="ncw-pos-sticky ncw-size-w-100pr ncw-size-h-25 ncw-bg-color-grey ncw-color-white" style="top: -1px;">B</div>
+            <br/>
+            <p class="ncw-font-f-roboto">Ben</p>
+            <p class="ncw-font-f-roboto">Blake</p>
+            <p class="ncw-font-f-roboto">Beatrice</p>
+        </div>
+        <br/>
+        <p class="ncw-font-f-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consectetur voluptates velit error iste odit cumque cupiditate neque necessitatibus delectus? Minus, quas? Assumenda tenetur officiis minima ducimus? Omnis, alias inventore?</p>
+        <br/>
+        <p class="ncw-font-f-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium adipisci rem minima, nemo, ullam sapiente voluptatibus sequi nisi assumenda voluptates. Quam quas non similique beatae eum expedita excepturi libero.</p>
+        <br/>
+        <p class="ncw-font-f-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolore quae, tempore ratione, facilis error nisi beatae saepe fugiat ex asperiores mollitia similique aliquam qui. Non tempora incidunt voluptatum esse.</p>
+        <br/>
+    </div>
+    <pre>
+        <code class="language-html">&lt;div&gt;&#0010;&nbsp;&nbsp;&lt;div class=&quot;ncw-pos-sticky ncw-size-w-100pr ncw-size-h-25 ncw-bg-color-grey ncw-color-white&quot; style=&quot;top: -1px&quot;&gt;A&lt;/div&gt;&#0010;&nbsp;&nbsp;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Andrew&lt;/p&gt;&#0010;&nbsp;&nbsp;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Alex&lt;/p&gt;&#0010;&nbsp;&nbsp;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Adrian&lt;/p&gt; &lt;/div&gt;&#0010;&lt;div&gt;&#0010;&lt;div class=&quot;ncw-pos-sticky ncw-size-w-100pr ncw-size-h-25 ncw-bg-color-grey ncw-color-white&quot; style=&quot;top: -1px;&quot;&gt;B&lt;/div&gt;&#0010;&nbsp;&nbsp;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Ben&lt;/p&gt;&#0010;&nbsp;&nbsp;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Blake&lt;/p&gt;&#0010;&nbsp;&nbsp;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Beatrice&lt;/p&gt;&#0010;&lt;/div&gt;&#0010;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consectetur voluptates velit error iste odit cumque cupiditate neque necessitatibus delectus? Minus, quas? Assumenda tenetur officiis minima ducimus? Omnis, alias inventore?&lt;/p&gt;&#0010;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium adipisci rem minima, nemo, ullam sapiente voluptatibus sequi nisi assumenda voluptates. Quam quas non similique beatae eum expedita excepturi libero.&lt;/p&gt;&#0010;&lt;p class=&quot;ncw-font-f-roboto&quot;&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolore quae, tempore ratione, facilis error nisi beatae saepe fugiat ex asperiores mollitia similique aliquam qui. Non tempora incidunt voluptatum esse.&lt;/p&gt;</code>
+    </pre>
+</div>
